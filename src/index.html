@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Oasis Hair & Beauty</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+          margin: 0;
+          font-family: Arial, sans-serif;
+          background: #f5f2ec;
+          color: #333;
+        }
+
+        header {
+          text-align: center;
+          padding: 40px 20px;
+          background: #e8dfd3;
+        }
+
+        header img {
+          width: 180px;
+          border-radius: 50%;
+        }
+
+        h1 {
+          margin: 10px 0 5px;
+        }
+
+        section {
+          padding: 40px 20px;
+          text-align: center;
+        }
+
+        .services {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 20px;
+        }
+
+        .card {
+          background: white;
+          padding: 20px;
+          border-radius: 10px;
+          width: 250px;
+          box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        footer {
+          background: #333;
+          color: white;
+          text-align: center;
+          padding: 20px;
+        }
+
+        .btn {
+          display: inline-block;
+          padding: 12px 25px;
+          background: #c9a96e;
+          color: white;
+          text-decoration: none;
+          border-radius: 5px;
+          margin-top: 15px;
+          font-weight: bold;
+        }
+
+        .btn:hover {
+          background: #b8955e;
+        }
+
+        .whatsapp {
+          background: #25D366;
+          color: white;
+          padding: 12px 25px;
+          border-radius: 30px;
+          text-decoration: none;
+          font-weight: bold;
+          display: inline-block;
+          margin-top: 10px;
+        }
+
+        .whatsapp-float {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          background: #25D366;
+          color: white;
+          font-size: 24px;
+          padding: 15px;
+          border-radius: 50%;
+          text-decoration: none;
+          box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <img src="logo" alt="Oasis Hair & Beauty">
+    <h1>Oasis Hair & Beauty</h1>
+    <p>By Sandra & Laura</p>
+</header>
+
+<section>
+    <h2>Bienvenidos</h2>
+    <p>Tu peluquería en el Camping Alannia 🌴</p>
+    <a href="https://wa.me/34617015851?text=Hola%20quiero%20reservar%20cita" target="_blank" class="whatsapp">
+        💬 Reservar por WhatsApp
+    </a>
+</section>
+
+<section>
+    <h2>Servicios</h2>
+
+    <div class="services">
+        <div class="card">
+            <h3>✂️ Peluquería</h3>
+            <p>Cortes, peinados y styling para hombre y mujer.</p>
+        </div>
+
+        <div class="card">
+            <h3>🎨 Color</h3>
+            <p>Tintes, mechas, balayage y más.</p>
+        </div>
+
+        <div class="card">
+            <h3>💅 Uñas</h3>
+            <p>Manicura y pedicura profesional.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Ubicación</h2>
+    <p>📍 Camping Alannia</p>
+</section>
+
+<section>
+    <h2>Reservas</h2>
+    <p>Contáctanos por WhatsApp o en persona</p>
+    <a href="https://wa.me/34617015851?text=Hola%20quiero%20cita" target="_blank" class="btn">
+        Reservar ahora
+    </a>
+</section>
+
+<footer>
+    <p>© 2026 Oasis Hair & Beauty</p>
+</footer>
+
+<!-- BOTÓN FLOTANTE -->
+<a href="https://wa.me/34617015851?text=Hola%20quiero%20cita" target="_blank" class="whatsapp-float">
+    💬
+</a>
+
+</body>
+</html>

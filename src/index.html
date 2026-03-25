@@ -8,9 +8,10 @@
     <style>
         body {
           margin: 0;
-          font-family: Arial, sans-serif;
+          font-family: 'Segoe UI', Arial, sans-serif;
           background: #f5f2ec;
           color: #333;
+          line-height: 1.6;
         }
 
         header {
@@ -21,16 +22,18 @@
 
         header img {
           width: 180px;
+          height: 180px;
+          object-fit: cover;
           border-radius: 50%;
-        }
-
-        h1 {
-          margin: 10px 0 5px;
+          border: 4px solid white;
+          box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
 
         section {
           padding: 40px 20px;
           text-align: center;
+          max-width: 800px;
+          margin: 0 auto;
         }
 
         .services {
@@ -45,14 +48,40 @@
           padding: 20px;
           border-radius: 10px;
           width: 250px;
-          box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+          box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        /* Estilo Horario */
+        .schedule-table {
+          margin: 0 auto;
+          background: white;
+          padding: 20px;
+          border-radius: 10px;
+          display: inline-block;
+          box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        /* Redes Sociales */
+        .social-links {
+          margin-top: 20px;
+        }
+        .social-item {
+          display: inline-block;
+          margin: 10px 15px;
+          text-decoration: none;
+          color: #333;
+          font-weight: bold;
+        }
+        .social-item:hover {
+          color: #c9a96e;
         }
 
         footer {
           background: #333;
           color: white;
           text-align: center;
-          padding: 20px;
+          padding: 30px;
+          margin-top: 20px;
         }
 
         .btn {
@@ -66,10 +95,6 @@
           font-weight: bold;
         }
 
-        .btn:hover {
-          background: #b8955e;
-        }
-
         .whatsapp {
           background: #25D366;
           color: white;
@@ -78,7 +103,6 @@
           text-decoration: none;
           font-weight: bold;
           display: inline-block;
-          margin-top: 10px;
         }
 
         .whatsapp-float {
@@ -92,6 +116,7 @@
           border-radius: 50%;
           text-decoration: none;
           box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+          z-index: 1000;
         }
     </style>
 </head>
@@ -99,33 +124,39 @@
 <body>
 
 <header>
-    <img src="logo" alt="Oasis Hair & Beauty">
+    <img src="logo/logo.jpeg" alt="Oasis Hair & Beauty">
     <h1>Oasis Hair & Beauty</h1>
     <p>By Sandra & Laura</p>
 </header>
 
 <section>
     <h2>Bienvenidos</h2>
-    <p>Tu peluquería en el Camping Alannia 🌴</p>
+    <p>Tu peluquería de confianza en el <strong>Camping Alannia</strong> 🌴</p>
     <a href="https://wa.me/34617015851?text=Hola%20quiero%20reservar%20cita" target="_blank" class="whatsapp">
-        💬 Reservar por WhatsApp
+        💬 Reservar Cita por WhatsApp
     </a>
 </section>
 
-<section>
-    <h2>Servicios</h2>
+<section style="background-color: #fff;">
+    <h2>Horario de Apertura</h2>
+    <div class="schedule-table">
+        <p><strong>Lunes a Viernes:</strong><br>
+            09:30 – 16:30</p>
+        <p><em>Sábados y Domingos: Cerrado</em></p>
+    </div>
+</section>
 
+<section>
+    <h2>Nuestros Servicios</h2>
     <div class="services">
         <div class="card">
             <h3>✂️ Peluquería</h3>
-            <p>Cortes, peinados y styling para hombre y mujer.</p>
+            <p>Cortes, peinados y styling para todos.</p>
         </div>
-
         <div class="card">
             <h3>🎨 Color</h3>
-            <p>Tintes, mechas, balayage y más.</p>
+            <p>Tintes, mechas, balayage y tratamientos.</p>
         </div>
-
         <div class="card">
             <h3>💅 Uñas</h3>
             <p>Manicura y pedicura profesional.</p>
@@ -133,24 +164,32 @@
     </div>
 </section>
 
-<section>
+<section style="background-color: #e8dfd3;">
     <h2>Ubicación</h2>
-    <p>📍 Camping Alannia</p>
-</section>
-
-<section>
-    <h2>Reservas</h2>
-    <p>Contáctanos por WhatsApp o en persona</p>
-    <a href="https://wa.me/34617015851?text=Hola%20quiero%20cita" target="_blank" class="btn">
-        Reservar ahora
+    <p>📍 <strong>Camping Alannia Costa Blanca</strong></p>
+    <p>Salida 730, AP-7<br>
+        03330 Crevillent, Alicante</p>
+    <a href="https://maps.app.goo.gl/uXv4i7j6XG5vL2Uf8" target="_blank" class="btn">
+        🗺️ Cómo llegar (Google Maps)
     </a>
 </section>
 
+<section>
+    <h2>Síguenos en Redes Sociales</h2>
+    <div class="social-links">
+        <a href="https://www.instagram.com/oasis.hair.beauty" target="_blank" class="social-item">
+            📸 Instagram: @oasis.hair.beauty
+        </a><br>
+        <a href="https://www.tiktok.com/@oasishairandbeauty1" target="_blank" class="social-item">
+            🎵 TikTok: oasishairandbeauty1
+        </a>
+    </div>
+</section>
+
 <footer>
-    <p>© 2026 Oasis Hair & Beauty</p>
+    <p>© 2026 Oasis Hair & Beauty | By Sandra & Laura</p>
 </footer>
 
-<!-- BOTÓN FLOTANTE -->
 <a href="https://wa.me/34617015851?text=Hola%20quiero%20cita" target="_blank" class="whatsapp-float">
     💬
 </a>
